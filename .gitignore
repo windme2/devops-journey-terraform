@@ -1,0 +1,29 @@
+# Local .terraform directories (โฟลเดอร์ดาวน์โหลด providers และ modules)
+**/.terraform/*
+
+# .tfstate files (ไฟล์สถานะที่เก็บ Sensitive Data เช่น Password ห้าม commit เด็ดขาด!)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files with secrets (ถ้ามีไฟล์เก็บ secret แยก)
+*.secret.tfvars
+secret.tfvars
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI config files
+.terraformrc
+terraform.rc
+
+# Generated mock files in this tutorial
+output_config.json
+worker_*.txt
